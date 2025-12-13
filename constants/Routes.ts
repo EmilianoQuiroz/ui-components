@@ -7,81 +7,85 @@ interface MenuRoute {
 }
 export const menuRoutes: MenuRoute[] = [
   {
-    title: 'Pull to refresh',
-    icon: 'refresh-outline',
-    name: 'pull-to-refresh/index',
+    title: "Pull to refresh",
+    icon: "refresh-outline",
+    name: "pull-to-refresh/index",
   },
   {
-    title: 'Section List',
-    icon: 'list-outline',
-    name: 'section-list/index',
+    title: "Section List",
+    icon: "list-outline",
+    name: "section-list/index",
   },
   {
-    title: 'Modal',
-    icon: 'copy-outline',
-    name: 'modal/index',
+    title: "Modal",
+    icon: "copy-outline",
+    name: "modal/index",
   },
   {
-    title: 'InfiniteScroll',
-    icon: 'download-outline',
-    name: 'infinite-scroll/index',
+    title: "InfiniteScroll",
+    icon: "download-outline",
+    name: "infinite-scroll/index",
   },
   {
-    title: 'Slides',
-    icon: 'flower-outline',
-    name: 'slides/index',
+    title: "Slides",
+    icon: "flower-outline",
+    name: "slides/index",
   },
   {
-    title: 'Themes',
-    icon: 'flask-outline',
-    name: 'themes/index',
+    title: "Themes",
+    icon: "flask-outline",
+    name: "themes/index",
   },
 ];
 
 export const uiMenuRoutes: MenuRoute[] = [
   {
-    title: 'Switches',
-    icon: 'toggle-outline',
-    name: 'switches/index',
+    title: "Buttons",
+    icon: "radio-button-on-outline",
+    name: "button/index",
   },
   {
-    title: 'Alerts',
-    icon: 'alert-circle-outline',
-    name: 'alerts/index',
+    title: "Switches",
+    icon: "toggle-outline",
+    name: "switches/index",
   },
   {
-    title: 'TextInputs',
-    icon: 'document-text-outline',
-    name: 'text-inputs/index',
+    title: "Alerts",
+    icon: "alert-circle-outline",
+    name: "alerts/index",
+  },
+  {
+    title: "TextInputs",
+    icon: "document-text-outline",
+    name: "text-inputs/index",
   },
 ];
 
 export const animationMenuRoutes: MenuRoute[] = [
   {
-    title: 'Animation 101',
-    icon: 'cube-outline',
-    name: 'animation-101/index',
+    title: "Animation 101",
+    icon: "cube-outline",
+    name: "animation-101/index",
   },
   {
-    title: 'Animation 102',
-    icon: 'albums-outline',
-    name: 'animation-102/index',
+    title: "Animation 102",
+    icon: "albums-outline",
+    name: "animation-102/index",
   },
 ];
 
 export const authRoutes: MenuRoute[] = [
   {
-    title: 'login 101',
-    icon: 'folder-open-outline',
-    name: 'login-101/index',
+    title: "login 101",
+    icon: "folder-open-outline",
+    name: "login-101/index",
   },
   {
-    title: 'register 102',
-    icon: 'log-in-outline',
-    name: 'register-102/index',
+    title: "register 102",
+    icon: "log-in-outline",
+    name: "register-102/index",
   },
 ];
-
 
 export const allRoutes = [
   ...menuRoutes,

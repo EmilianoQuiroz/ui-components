@@ -5,8 +5,8 @@ import {
   uiMenuRoutes,
 } from "@/constants/Routes";
 import MenuItem from "@/presentation/menu/MenuItem";
+import ThemeText from "@/presentation/shared/ThemedText";
 import ThemedView from "@/presentation/shared/ThemedView";
-import ThemeText from "@/presentation/shared/ThemeText";
 import { ScrollView, View } from "react-native";
 
 const ComponentsApp = () => {

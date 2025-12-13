@@ -2,7 +2,7 @@ import Ionicon from "@expo/vector-icons/Ionicons";
 import { Href, router } from "expo-router";
 import React from "react";
 import { Pressable, View } from "react-native";
-import ThemeText from "../shared/ThemeText";
+import ThemeText from "../shared/ThemedText";
 
 interface Props {
   title: string;
