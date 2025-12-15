@@ -11,7 +11,7 @@ export default function RootLayout() {
         contentStyle: { backgroundColor: "white" },
       }}
     >
-      <Stack.Screen name="index" options={{ title: "Home" }} />
+      <Stack.Screen name="index" options={{ title: "Kit UI" }} />
       {allRoutes.map((route) => (
         <Stack.Screen
           key={route.name}
