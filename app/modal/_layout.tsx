@@ -1,0 +1,23 @@
+import { View, Text } from "react-native";
+import { Stack } from "expo-router";
+import ThemedView from "@/presentation/shared/ThemedView";
+
+export default function ModalLayout() {
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen
+        name="modal-window"
+        options={{
+          presentation: "modal",
+        }}
+      />
+      <Stack.Screen
+        name="modal-window2"
+        options={{
+          presentation: "modal",
+        }}
+      />
+    </Stack>
+  );
+}
