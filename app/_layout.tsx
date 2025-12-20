@@ -18,7 +18,10 @@ export default function RootLayout() {
           name={route.name}
           options={{
             title: route.title,
-            headerShown: !route.title.includes("Slides"),
+            headerShown:
+              !route.title.includes("Slides") &&
+              !route.title.includes("auth 101") &&
+              !route.title.includes("auth 102"),
           }}
         />
       ))}

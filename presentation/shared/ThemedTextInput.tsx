@@ -5,16 +5,21 @@ interface Props extends TextInputProps {
   placeholder: string;
 }
 
-const ThemedTextInput = ({ placeholder, ...rest }: Props) => {
-  return (
-    <TextInput
-      style={styles.input}
-      placeholder={placeholder}
-      placeholderTextColor="#696969ff"
-      {...rest}
-    />
-  );
-};
+const ThemedTextInput = React.forwardRef<TextInput, Props>(
+  ({ placeholder, style, ...rest }, ref) => {
+    return (
+      <TextInput
+        ref={ref}
+        style={[styles.input, style]}
+        placeholder={placeholder}
+        placeholderTextColor="#696969ff"
+        {...rest}
+      />
+    );
+  }
+);
+
+ThemedTextInput.displayName = "ThemedTextInput";
 
 export default ThemedTextInput;
 const styles = StyleSheet.create({
