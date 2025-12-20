@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function Register101Screen() {
+export default function PillsScreen() {
   return (
     <View>
-      <Text>Register101Screen</Text>
+      <Text>index</Text>
     </View>
   )
 }

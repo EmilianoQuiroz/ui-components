@@ -1,6 +1,7 @@
 import { Colors } from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
-import { Pressable, PressableProps, Text } from "react-native";
+import React from "react";
+import { Pressable, PressableProps, Text, View } from "react-native";
 
 interface Props extends PressableProps {
   onPress?: () => void;
@@ -21,7 +22,7 @@ interface Props extends PressableProps {
   iconSize?: number;
 }
 
-export default function ThemedButton({
+const ThemedButton = React.forwardRef<View, Props>(({
   onPress,
   style,
   buttonType = "fill",
@@ -34,7 +35,7 @@ export default function ThemedButton({
   iconPosition = "left",
   iconSize,
   ...rest
-}: Props) {
+}, ref) => {
   const getTextColor = () => {
     if (buttonType === "outline" && color) {
       return color === "primary"
@@ -60,7 +61,7 @@ export default function ThemedButton({
 
   return (
     <Pressable
-      
+      ref={ref}
       onPress={onPress}
       style={(state) => [
         {
@@ -96,7 +97,7 @@ export default function ThemedButton({
               : radius === "lg"
               ? 15
               : radius === "full"
-              ? "100%"
+              ? 32
               : 10,
           alignItems: "center",
           justifyContent: "center",
@@ -161,4 +162,8 @@ export default function ThemedButton({
       )}
     </Pressable>
   );
-}
+});
+
+ThemedButton.displayName = "ThemedButton";
+
+export default ThemedButton;

@@ -32,9 +32,9 @@ export const menuRoutes: MenuRoute[] = [
     name: "slides/index",
   },
   {
-    title: "Themes",
+    title: "Carousel",
     icon: "flask-outline",
-    name: "themes/index",
+    name: "carousel/index",
   },
 ];
 
@@ -43,6 +43,11 @@ export const uiMenuRoutes: MenuRoute[] = [
     title: "Buttons",
     icon: "radio-button-on-outline",
     name: "button/index",
+  },
+  {
+    title: "Pills",
+    icon: "pin-outline",
+    name: "pills/index",
   },
   {
     title: "Switches",
@@ -59,12 +64,17 @@ export const uiMenuRoutes: MenuRoute[] = [
     icon: "document-text-outline",
     name: "text-inputs/index",
   },
+  {
+    title: "Charts",
+    icon: "pie-chart-outline",
+    name: "charts/index",
+  },
 ];
 
 export const animationMenuRoutes: MenuRoute[] = [
   {
     title: "Animation 101",
-    icon: "cube-outline",
+    icon: "albums-outline",
     name: "animation-101/index",
   },
   {
@@ -72,18 +82,28 @@ export const animationMenuRoutes: MenuRoute[] = [
     icon: "albums-outline",
     name: "animation-102/index",
   },
+  {
+    title: "Animation 103",
+    icon: "albums-outline",
+    name: "animation-103/index",
+  },
 ];
 
 export const authRoutes: MenuRoute[] = [
   {
-    title: "login 101",
+    title: "auth 101",
     icon: "folder-open-outline",
-    name: "login-101/index",
+    name: "auth-101/index",
   },
   {
-    title: "register 102",
+    title: "auth 102",
     icon: "log-in-outline",
-    name: "register-102/index",
+    name: "auth-102/index",
+  },
+  {
+    title: "auth 103",
+    icon: "send-outline",
+    name: "auth-103/index",
   },
 ];
 
